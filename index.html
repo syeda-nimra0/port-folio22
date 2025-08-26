@@ -1,35 +1,3 @@
-<!-- File: /portfolio/index.html
-Minimal documentation at top: This is a single-file HTML portfolio template (HTML/CSS/JS)
- - Built for a frontend dev who knows HTML/CSS/JS and will later convert to React if desired.
- - Features: 3D interactive hero, floating shapes, soft royal color palette, sections (About, Skills, Projects, Resume/CV with download), responsive, accessible.
- - Resume download uses html2canvas + jsPDF to generate a PDF from the resume HTML.
-
-PLAN / PSEUDOCODE (detailed):
-1. Load Google Fonts (Playfair Display for headings, Inter for body) and icon font.
-2. Create a responsive layout with a main navbar and sections: Hero, About, Skills, Projects, Resume, Contact, Footer.
-3. Hero
-   - Left: greeting, role, CTA buttons (View CV, Contact)
-   - Right: 3D interactive card (CSS 3D cube + floating glass panel) that tilts with mouse and auto-rotates.
-   - Add soft particle canvas background plus subtle gradient overlay for a "royal" mood.
-4. 3D effects
-   - CSS perspective + transform-style: preserve-3d for cube faces.
-   - JS: mousemove to tilt card, requestAnimationFrame for idle rotation.
-   - Add CSS keyframe animations for floating shapes.
-5. Sections
-   - About: short intro, education, small timeline
-   - Skills: animated skill bars and small rotating 3D icons
-   - Projects: cards with hover 3D lift and link placeholders
-   - Resume/CV: HTML view with structured info and a "Download PDF" button that uses html2canvas + jsPDF to generate a PDF.
-   - Contact: email + social links + contact form (demo only, no backend)
-6. Accessibility & responsive
-   - Semantic tags, ARIA on interactive components, keyboard focus states, alt text.
-7. Colors & typography
-   - Palette: deep-indigo (#2B2F6B), royal purple (#6B5B95), soft-blue (#A7C7E7), gold accent (#D4AF37), ivory bg.
-   - Font sizes matched for a polished look.
-8. Deliverable: Single HTML file to open locally. Works without build tools.
-
----
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -370,3 +338,4 @@ PLAN / PSEUDOCODE (detailed):
   </script>
 </body>
 </html>
+
